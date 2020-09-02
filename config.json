@@ -1,6 +1,6 @@
 {
   "_comment": "===== MODEL CONFIGURATION =====",
-  "model_dir": "models/a_very_robust_model",
+  "model_dir": "models/adv_trained",
 
   "_comment": "===== DATASET CONFIGURATION =====",
   "data_path": "cifar10_data",
@@ -23,10 +23,12 @@
   "eval_on_cpu": false,
 
   "_comment": "=====ADVERSARIAL EXAMPLES CONFIGURATION=====",
-  "epsilon": 8.0,
+  "epsilon": 255.0,
   "num_steps": 10,
   "step_size": 2.0,
   "random_start": true,
   "loss_func": "xent",
-  "store_adv_path": "attack.npy"
+  "store_adv_path": "natural_image_noise_sargan_recover.npy",
+  "store_adv_recover_path": "natural_image_noise_sargan_recover.npy",
+  "natural_test_path": "original_test.npy"
 }
